@@ -1,12 +1,10 @@
-# Powershell Scripts, functions, one liners and other odds and ends.
+# Powershell Scripts
 
 <img src="https://raw.githubusercontent.com/jxmoore/powershellScripts/master/img/logo2.png" align="Center"
      title="PowerShell">
 
 
-This is a collection of my many many powershell scripts, functions, one liners etc... that i have used at some point
-through out my carrer. These were written for various reasons - some were used in CI/CD pipelines, written to automate some of the more boring tasks, 
-for one off unique cases where manual intervention in the GUI would have taken too long. etc... Because of this these scripts are, well, _all over the place_. Some of themare quite old, some are new etc... Please tread the waters carefully. However, having said that, i'm going to host these in this repo for a few reasons: 
+This is a collection of my many powershell scripts, functions, one liners etc... that i have used at some point through out my carrer. These were written for various reasons - some were used in CI/CD pipelines, written to automate some of the more boring tasks, for one off unique cases where manual intervention in the GUI would have taken too long. etc... Because of this these scripts are, well, _all over the place_. Some of themare quite old, some are new etc... Please tread the waters carefully. However, having said that, i'm going to host these in this repo for a few reasons: 
 
 * Its FOSS! 
 * I constantly see questions regarding powershell usage asked on forums and reddit (**/r/powershell**) and i feel the answers are riddeled in one or more of these scripts. It would be easier to point someone here in the future than scrouring my machines for an example or making one from scratch.
@@ -41,6 +39,8 @@ Before diving in it should be said i likely dont write my scripts the same way y
    write-host "Bye"
    ```
    If for whatever reason it bothers you, then by all means remove it. It will have no impact on the script unless the commands are on one line.
+5. You will see some CI/CD specific commands or references from time to time. That may be something like `%TEAMCITY.BULD...%` or `write-highlight "..."`. This is because some of the scripts were written for a CI/CD pipeline. If they are within the script i have likely (_or will try to_) include comments as to what they are and where they come from.
+
 #### I see errors!
 Please put in a pull request or ping me and let me know, as i said, the state of these is all over the place. I have tried to correct the obvious issues as i have moved them over but Im bound to miss something at some point.
 
