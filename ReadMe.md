@@ -1,6 +1,6 @@
 # Powershell Scripts, functions, one liners and other odds and ends.
 
-<img src="https://github.com/jxmoore/powershellScripts/img/logo2.png" align="Center"
+<img src="https://raw.githubusercontent.com/jxmoore/powershellScripts/master/img/logo2.png" align="Center"
      title="PowerShell">
 
 
@@ -42,7 +42,7 @@ Before diving in it should be said i likely dont write my scripts the same way y
    ```
    If for whatever reason it bothers you, then by all means remove it. It will have no impact on the script unless the commands are on one line.
 #### I see errors!
-Please put in a pull request or ping me and let me know, as i said, the state of these is all over the place. I have tried to correct the obvious issues as i have moved them over but im bound to miss something.
+Please put in a pull request or ping me and let me know, as i said, the state of these is all over the place. I have tried to correct the obvious issues as i have moved them over but Im bound to miss something at some point.
 
 ### Repo Structure
 The files are broken apart by their _use case and target_ to some regard. That is to say everything revolving around `Azure` will live within the `Azure` folder, everything that deals with AD will wind up in the `ActiveDirectory` folder and so on.
