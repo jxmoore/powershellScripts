@@ -3,14 +3,12 @@
 <img src="https://raw.githubusercontent.com/jxmoore/powershellScripts/master/img/logo2.png" align="Center"
      title="PowerShell">
 
-
-This is a collection of my many powershell scripts, functions, one liners etc... that i have used at some point through out my carrer. These were written for various reasons - some were used in CI/CD pipelines, written to automate some of the more boring tasks, for one off unique cases where manual intervention in the GUI would have taken too long. etc... Because of this these scripts are, well, _all over the place_. Some of themare quite old, some are new etc... Please tread the waters carefully. However, having said that, i'm going to host these in this repo for a few reasons: 
+This is a collection of my many powershell scripts, functions, one liners etc... that i have used at some point throughout my carrer or still use today. These were written for various reasons - some were used in CI/CD pipelines, written to automate some of the more boring tasks, for one off unique cases where manual intervention in the GUI would have taken too long or just to have in my profile to speed up my workflows. etc... Because of this these scripts are, well, _all over the place_. Some of them are quite old, some are new, some like those using AzureRM could be updated to AZ but have not etc... Please tread the waters carefully. However, having said that, i'm going to host these in this repo for a few reasons: 
 
 * Its FOSS! 
-* I constantly see questions regarding powershell usage asked on forums and reddit (**/r/powershell**) and i feel the answers are riddeled in one or more of these scripts. It would be easier to point someone here in the future than scrouring my machines for an example or making one from scratch.
-* _Maybe_ it can help some passer by who is hunting google for a specific Powershell example.
 * Storing the (now 500+, i know im a horader) ps1's locally is foolish. 
-
+* _Maybe_ it can help some passer by who is hunting google for a specific Powershell example.
+* So i can source it when responding to question on _/r/powershell/_ rather than digging through multiple directories or writing something new. 
 
 <hr>
 
@@ -30,7 +28,7 @@ Before diving in it should be said i likely dont write my scripts the same way y
    ```Powershell
    get-aduser -filter * | select -ExpandProperty samaccountname | ? { $_ -notmatch 'powerhouse'}
    ```  
-3. I prefer to use camelCase for variables. For example in example one its `$adUser` rather than `$AdUser`. This is likely due to my time with C# but i think its good to follow some sort of practice, be that camel, snake, pascal etc... 
+3. I like to use **camelCase** for variables. For example in example one its `$adUser` rather than `$AdUser`. This is likely due to my time with C# but i think its good to follow some sort of practice, be that camel, snake, pascal etc... 
 4. On the subject of C# traits, i also like to use a trailing `;`. For example: 
    ```powershell
    # With semi colon
