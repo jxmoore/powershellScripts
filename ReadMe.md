@@ -5,10 +5,10 @@
 
 This is a collection of my many powershell scripts, functions, one liners etc... that i have used at some point throughout my carrer or still use today. These were written for various reasons - some were used in CI/CD pipelines, written to automate some of the more boring tasks, for one off unique cases where manual intervention in the GUI would have taken too long or just to have in my profile to speed up my workflows. etc... Because of this these scripts are, well, _all over the place_. Some of them are quite old, some are new, some like those using AzureRM could be updated to AZ but have not etc... Please tread the waters carefully. However, having said that, i'm going to host these in this repo for a few reasons: 
 
-* Its FOSS! 
+* I think it can help some passer by sysadmin who is hunting google for a specific Powershell example. 
 * Storing the (now 500+, i know im a horader) ps1's locally is foolish. 
-* _Maybe_ it can help some passer by who is hunting google for a specific Powershell example.
 * So i can source it when responding to question on _/r/powershell/_ rather than digging through multiple directories or writing something new. 
+* Its FOSS (kinda...)
 
 <hr>
 
