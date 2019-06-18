@@ -1,6 +1,6 @@
 # Functions
 
-<img src="https://raw.githubusercontent.com/jxmoore/powershellScripts/master/img/logo1.png" align="Center"
+<img src="https://raw.githubusercontent.com/jxmoore/powershellScripts/master/img/funclogo.png" align="Center"
      title="PowerShell">
 
 These are functions that dont fit neatly into the other directories in this repo.
