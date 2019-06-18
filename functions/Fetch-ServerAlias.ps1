@@ -2,7 +2,7 @@
 # Team had lost track of what aliases a specific server was using. 
 # Super simple script that looks for CNAMES that exist for a single hostname
 
-function Start-AliasLookup ($serverName)
+function Fetch-ServerAlias ($serverName)
 {
     # domainController = "someDc.local";
     $domainController = [string]$($env:LOGONSERVER -split "\\"); $domainController = $domainController.TrimStart();
