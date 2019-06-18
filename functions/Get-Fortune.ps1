@@ -1,3 +1,4 @@
+# simple powershell version of the fortune command
 function Get-Fortune()
 {
     if ((Get-Random -Maximum 2) -eq 0 ) {
