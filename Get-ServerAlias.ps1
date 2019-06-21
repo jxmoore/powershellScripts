@@ -1,9 +1,32 @@
-# The issue arouse that database servers had countless CNAME records and the DBA
-# Team had lost track of what aliases a specific server was using. 
-# Super simple script that looks for CNAMES that exist for a single hostname
+<#
+    .SYNOPSIS
+        Gets all of the CNAME records in DNS for a given hostname
 
-function Fetch-ServerAlias ($serverName)
-{
+    .DESCRIPTION
+        Gets all of the CNAME records in DNS for a given hostname
+
+    .PARAMETER serverName
+        The server that we want the CNAME records for.
+
+    .EXAMPLE
+        Get-ServerAlias -serverName "VirPDC01";
+
+        Prints all of the CNAME records in DNS for the server named "VirPDC01"
+
+    .FUNCTIONALITY
+        Networking
+    
+    .NOTES
+        The script requires the DNS module for powershell. 
+#>
+
+function Get-ServerAlias{
+     
+    Param (
+            # The name of the server that we will be using to query DNS. 
+            [Parameter(Mandatory=$true)][string] $serverName
+    )
+    
     # domainController = "someDc.local";
     $domainController = [string]$($env:LOGONSERVER -split "\\"); $domainController = $domainController.TrimStart();
     Get-DnsServerZone -ComputerName $domainController | select -ExpandProperty zonename | % {
