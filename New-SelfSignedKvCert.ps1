@@ -31,8 +31,8 @@ Function New-SelfSignedKvCert{
             [Parameter(Mandatory=$true)][string] $certName
         )
 
-    if ([string]::IsNullOrEmpty($(Get-AzureRmContext).Account)) {Login-AzureRmAccount}
-    $policy = New-AzureKeyVaultCertificatePolicy -SubjectName $subjectName -IssuerName Self -ValidityInMonths 48
-    Add-AzureKeyVaultCertificate -VaultName $vaultName -Name $certificateName -CertificatePolicy $policy
+    if ([string]::IsNullOrEmpty($(Get-AzureRmContext).Account)) {Login-AzureRmAccount;}
+    $policy = New-AzureKeyVaultCertificatePolicy -SubjectName $subjectName -IssuerName Self -ValidityInMonths 48;
+    Add-AzureKeyVaultCertificate -VaultName $vaultName -Name $certificateName -CertificatePolicy $policy;
 
 }
