@@ -1,0 +1,29 @@
+<#
+    .SYNOPSIS
+
+
+    .DESCRIPTION
+
+
+    .PARAMETER powervariable
+
+
+    .EXAMPLE
+
+
+
+    .FUNCTIONALITY
+
+    
+    .NOTES
+
+#>
+
+function NAME {
+     
+    Param (
+            # stuff and things
+            [Parameter(Mandatory=$true)][string] $powervariable
+    )
+    
+}
